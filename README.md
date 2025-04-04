@@ -17,6 +17,7 @@
 ### Backend
 - **MySQL** (Database)
 - **OpenAI API**: For developing each LLM agent
+- **Langgraph**: To develop graph workflow for dynamic routing of LLM Agents
 
 ### Frontend
 - **Streamlit**
@@ -123,7 +124,8 @@ If GROBID is already running, ignore error. Otherwise main.py will run GROBID.
 ## 🌐 API Keys Management
 
 - Replace placeholders in the `.env` file with your API keys:
-  - `OPENAI_API_KEY` for extracting disruption type, severity, and location insights.
+  - `OPENAI_API_KEY` for LLM Agent Creation
+  - `TAVILY_API_KEY` for web search
 
 ---
 
