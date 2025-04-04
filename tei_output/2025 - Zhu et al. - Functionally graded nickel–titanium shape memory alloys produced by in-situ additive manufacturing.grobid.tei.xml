@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coords="1,37.59,168.03,428.17,14.93;1,37.59,185.26,182.37,14.93">Functionally graded nickel–titanium shape memory alloys produced by in-situ additive manufacturing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Elsevier BV</publisher>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2024-09-04">4 September 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,37.59,212.20,61.12,11.72"><forename type="first">Jia-Ning</forename><surname>Zhu</surname></persName>
+							<idno type="ORCID">0000-0003-0432-5542</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<addrLine>Mekelweg 2</addrLine>
+									<postCode>2628 CD</postCode>
+									<settlement>Delft</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,117.81,212.20,58.06,11.72"><forename type="first">Zhaorui</forename><surname>Yan</surname></persName>
+							<idno type="ORCID">0000-0003-0652-8108</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<addrLine>Mekelweg 2</addrLine>
+									<postCode>2628 CD</postCode>
+									<settlement>Delft</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,188.45,212.20,67.40,11.72"><forename type="first">Yi-Chieh</forename><surname>Yang</surname></persName>
+							<idno type="ORCID">0000-0002-4437-0199</idno>
+							<affiliation key="aff1">
+								<orgName type="laboratory">National Center for Nano Fabrication and Characterization (DTU Nanolab)</orgName>
+								<orgName type="institution">Technical University of Denmark (DTU)</orgName>
+								<address>
+									<settlement>Kgs. Lyngby</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,268.78,212.20,69.19,11.72"><forename type="first">Zhaoying</forename><surname>Ding</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<addrLine>Mekelweg 2</addrLine>
+									<postCode>2628 CD</postCode>
+									<settlement>Delft</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,350.53,212.20,100.99,11.72"><forename type="first">Marcel</forename><forename type="middle">J M</forename><surname>Hermans</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<addrLine>Mekelweg 2</addrLine>
+									<postCode>2628 CD</postCode>
+									<settlement>Delft</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,37.59,225.13,82.88,11.72"><forename type="first">Joerg</forename><forename type="middle">R</forename><surname>Jinschek</surname></persName>
+							<idno type="ORCID">0000-0003-1574-0899</idno>
+							<affiliation key="aff1">
+								<orgName type="laboratory">National Center for Nano Fabrication and Characterization (DTU Nanolab)</orgName>
+								<orgName type="institution">Technical University of Denmark (DTU)</orgName>
+								<address>
+									<settlement>Kgs. Lyngby</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,133.45,225.13,68.51,11.72"><forename type="first">Vera</forename><surname>Popovich</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Materials Science and Engineering</orgName>
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<addrLine>Mekelweg 2</addrLine>
+									<postCode>2628 CD</postCode>
+									<settlement>Delft</settlement>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coords="1,37.59,168.03,428.17,14.93;1,37.59,185.26,182.37,14.93">Functionally graded nickel–titanium shape memory alloys produced by in-situ additive manufacturing</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Scripta Materialia</title>
+						<title level="j" type="abbrev">Scripta Materialia</title>
+						<idno type="ISSN">1359-6462</idno>
+						<imprint>
+							<publisher>Elsevier BV</publisher>
+							<biblScope unit="volume">255</biblScope>
+							<biblScope unit="page">116351</biblScope>
+							<date type="published" when="2024-09-04">4 September 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">46F82119FC4A53ADAC5D47AE50BBB7EC</idno>
+					<idno type="DOI">10.1016/j.scriptamat.2024.116351</idno>
+					<note type="submission">Received 3 July 2024; Received in revised form 30 August 2024; Accepted 30 August 2024 Scripta Materialia 255 (2025) 116351</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1" ident="GROBID" when="2025-04-01T19:58+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>NiTi Shape memory alloys Superelasticity Compositional gradient Additive manufacturing</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In this study, three-dimensional functionally graded NiTi bulk materials were fabricated using laser powder bed fusion (LPBF) by in-situ adding Ni powder into equiatomic NiTi powder. The gradient zone exhibited a Ni composition ranging from approximately 49.6 to 52.4 at.% over a distance of about 2.75 mm. The functionalities along the compositional gradient were examined through differential scanning calorimetry analysis and spherical indentation. This unique gradient resulted in location-specific functionalities, including superelasticity characterized by wide and narrow hysteresis loops, shape memory effect, and various phase transformation temperatures. The rapid cooling rate during fabrication led to the presence of excess Ni in the solid-solute state within NiTi. This unique solid-solute compositional gradient in NiTi resulted in varying lattice parameters, influencing the compatibility between martensite and austenite and allowing for tailored hysteresis. This discovery presents new avenues for designing multifunctional materials through in-situ additive manufacturing.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The shape memory effect and superelasticity of NiTi alloys, arising from their reversible martensitic phase transformation, have made them widely used in medical, automotive, and aerospace industries <ref type="bibr" coords="1,263.05,451.09,10.10,8.85" target="#b0">[1]</ref>. To enhance the functional capabilities of shape memory alloys, there has been a growing interest in functionally graded (FG) shape memory alloys <ref type="bibr" coords="1,56.47,482.44,10.10,8.85" target="#b1">[2]</ref>. These alloys exhibit synergistic interactions between the functional properties of NiTi and the distinctive attributes of FG structures <ref type="bibr" coords="1,57.43,503.36,10.10,8.85" target="#b1">[2]</ref>.</p><p>Among the various FG NiTi alloys, those with a compositional gradient-featuring variations in the amounts of nickel (Ni) and titanium (Ti) throughout the shape memory alloy, emerge as promising materials <ref type="bibr" coords="1,37.59,545.20,10.10,8.85" target="#b1">[2]</ref>. This uniqueness allows them to simultaneously expand operating temperature-and stress-windows <ref type="bibr" coords="1,158.63,555.68,10.10,8.85" target="#b2">[3]</ref>. Traditionally, the fabrication of compositionally graded NiTi relied on diffusion annealing <ref type="bibr" coords="1,258.86,566.11,10.77,8.85" target="#b3">[4,</ref><ref type="bibr" coords="1,269.63,566.11,7.18,8.85" target="#b4">5]</ref> or powder metallurgy methods <ref type="bibr" coords="1,142.41,576.60,10.09,8.85" target="#b1">[2,</ref><ref type="bibr" coords="1,152.50,576.60,6.72,8.85" target="#b2">3,</ref><ref type="bibr" coords="1,159.22,576.60,6.72,8.85" target="#b5">6]</ref>. However, these approaches presented challenges, including the formation of undesirable intermetallic phases and impurity issues <ref type="bibr" coords="1,134.59,597.52,10.10,8.85" target="#b6">[7]</ref>. Moreover, due to limited cooling rates, Ni-rich FG NiTi alloys, manufactured by above-mentioned techniques, consist of multiple phases rather than a single NiTi phase. Therefore, the excess nickel fails to remain within the NiTi phase, impeding its influence on thermal-induced or stress-induced martensitic transformations. This ultimately results in undesirable compositionally functional gradients.</p><p>Based on the calculated NiTi phase diagram (Fig. <ref type="figure" coords="1,496.28,451.09,8.64,8.85">S1</ref> in supplementary materials), Ni exhibits a certain solid solubility in NiTi (~6.3 at.% Ni). This solubility has an impact on phase transformation temperatures and critical stress for transformation <ref type="bibr" coords="1,439.37,482.44,10.09,8.85" target="#b0">[1,</ref><ref type="bibr" coords="1,449.46,482.44,6.73,8.85" target="#b7">8]</ref>. Computational simulations further suggest that NiTi with a relatively large compositional gradient over a short distance can contribute to achieving linear superelasticity due to the composition-dependent critical stress for stress-induced martensitic transformations <ref type="bibr" coords="1,410.51,524.28,10.10,8.85" target="#b8">[9]</ref>. However, the actual fabrication of such compositional gradients has not been realized to date. Hence, it is imperative to fabricate Ni/Ti compositional gradients with the presence of Ni in a solid-solution state within the NiTi matrix.</p><p>To achieve this goal, two requirements must be met: 1) Creating local compositional gradients; 2) Keeping these gradients stable. With the emergence of additive manufacturing, these two requirements can be fulfilled by employing laser powder bed fusion (L-PBF). This technique facilitates the layer-by-layer fabrication of materials, allowing for precise tailoring of alloy compositions on the micrometre scale (the thickness of the powder bed) along the building direction <ref type="bibr" coords="1,491.69,628.87,14.36,8.85" target="#b9">[10]</ref>. Additionally, it offers high cooling rates (on the order of 10 5 -10 6 K/s <ref type="bibr" coords="1,512.22,639.36,13.96,8.85" target="#b10">[11]</ref>), which promote the excess of Ni within the NiTi phase in the solid-solute state <ref type="bibr" coords="2,37.59,65.97,14.36,8.85" target="#b11">[12]</ref>.</p><p>In this study, we incorporate a purpose-formulated powder feedstock, capable of in-situ adding mixture of Ni and equiatomic NiTi powders. Notably, the high temperature during LPBF facilitates the complete mixing of additional Ni with NiTi in the liquid state within melt pools, and subsequent high-rate cooling leads to the formation of oversaturated Ni-rich NiTi. This cannot be achieved by using conventional methods such as diffusion annealing or powder metallurgy, where low cooling rates result in the formation of Ni-rich phases, which deviates from the targeted NiTi phase.</p><p>The FG NiTi alloys were fabricated using an Anconity3D Midi machine equipped with a 1000 W laser source. The focus spot diameter is 80 μm diameter and features a Gaussian distribution. To avoid structural defects <ref type="bibr" coords="2,65.48,201.92,14.36,8.85" target="#b12">[13]</ref>, the L-PBF processing parameters are as follows: 250 W laser power, 1250 mm/s scanning velocity, 120 μm hatch distance, 30 μm layer thickness and 67 • adjacent layer rotation. The initial powder is near-equiatomic NiTi (49.6 at.% Ni), and pure Ni powder was in-situ added into powder feedstock during L-PBF. Finally, NiTi with ~2.75 mm height of compositional gradient was fabricated (schematic is illustrated in the Fig. <ref type="figure" coords="2,347.92,55.49,13.18,8.85">1(a)</ref>). The in-situ Ni addition process can be found in the supplementary materials S1 and Table <ref type="table" coords="2,445.49,65.97,7.25,8.85" target="#tab_0">S1</ref>. Details of the methods used for microstructure characterization, including optical microscopy (OM), electron backscatter diffraction (EBSD), X-ray diffractometry (XRD), energy-dispersive X-ray spectroscopy (EDS), transmission electron microscopy (TEM), and differential scanning calorimetry (DSC), are provided in the Supplementary information S2. To evaluate the local mechanical and functional properties of compositionally graded NiTi samples, instrumented indentation tests were conducted at room temperature using a Zwick ZHU2.5 instrument. To avoid stress concentrations, a spherical ball indenter with 0.5 mm diameter was used. The details of measuring the shape memory effect using bulk materials can be found in our previous work <ref type="bibr" coords="2,416.80,181.00,14.36,8.85" target="#b13">[14]</ref>. martensite, it is challenging to index NiTi martensite <ref type="bibr" coords="3,251.94,55.48,14.36,8.85" target="#b14">[15]</ref>. The non-indexed part consisting of martensite (B19′) phases has been further validated by the scanning transmission electron microscopy (STEM) and corresponding selected area electron diffraction (SAED) (Fig. <ref type="figure" coords="3,267.42,86.89,14.17,8.85">1d-1</ref>). With increasing the Ni content, B2 austenite becomes stable phase at room temperature and is indexed by EBSD. Austenitic grains with columnar features elongate along the building direction, indicating that solidified grains prefer to grow along the direction of thermal flow. Even in the Ni-rich zone, BCC_B2 is the main phase (confirmed by EBSD results and SAED patterns of Fig. <ref type="figure" coords="3,154.26,149.65,11.01,8.85">1</ref><ref type="figure" coords="3,168.94,149.65,3.67,8.85" target="#fig_1">2</ref>) and (d-3)), indicating the successful fabrication of the compositionally graded NiTi with an excess of Ni existing in the solid-solute state. It is worth noting that the presence of inevitable residual oxygen and the high activity of titanium result in nano-scaled titanium-containing oxide particles observed in regions with relatively high titanium content within the compositionally graded NiTi (Fig. <ref type="figure" coords="3,74.10,212.41,18.34,8.85">1(d-1</ref>) and (d-3)). The titanium-containing oxides have been identified in our previous works <ref type="bibr" coords="3,153.58,222.84,14.58,8.85" target="#b13">[14,</ref><ref type="bibr" coords="3,168.16,222.84,10.93,8.85" target="#b15">16]</ref>. Additionally, dislocations are present in the compositionally graded NiTi, which may result from plastic deformations induced by thermal stresses during rapid cooling (Fig. <ref type="figure" coords="3,56.13,254.25,13.47,8.85">1(d)</ref>).</p><p>The quantitative results of Ni and Ti contents obtained by EDS in the compositionally graded NiTi along the building direction are shown in Fig. <ref type="figure" coords="3,52.84,285.60,13.42,8.85" target="#fig_1">2(a)</ref>. The Ni composition begins to increase from the zone ② to the zone ④ to reach the peak Ni concentration with ~52.4 at.% (Fig. <ref type="figure" coords="3,268.89,296.09,13.18,8.85" target="#fig_1">2(a)</ref>). After removing the additional supply of Ni powder, the Ni concentration decreases rapidly to ~50 at.% within 0.5 mm (Zone ⑥, Fig. <ref type="figure" coords="3,258.12,317.01,10.90,8.85" target="#fig_1">2(a</ref>) and reaches a stable state in the zone ⑦). To understand the phase transformation behavior of FG NiTi, DSC measurements were conducted. It is found that phase transformation temperatures and their peak intensities decreases with increasing Ni content (Fig. <ref type="figure" coords="3,185.84,358.84,3.73,8.85" target="#fig_1">2</ref>(b) and Table <ref type="table" coords="3,239.41,358.84,3.24,8.85" target="#tab_0">1</ref>). Especially, the phase transformation peaks are almost undetectable in the zone ⑤ (Ni with the highest content up to ~52.4 at.%). Such phenomenon indicates the strain glass transition <ref type="bibr" coords="3,156.93,390.25,14.36,8.85" target="#b16">[17]</ref>, showing low transition entropy due to the presence of a high density of point defects. In our work, point defects were introduced by solid solution of excess Ni.</p><p>The X-ray diffraction patterns measured at room temperature show that an austenite phase is present in the location with a high Ni content (Fig. <ref type="figure" coords="3,55.39,442.52,10.65,8.85" target="#fig_1">2(c</ref>) and (d)) whereas martensite is the main phase for non-gradient locations. It is worth noting that only austenite and martensite were observed in the compositionally graded NiTi and no other phase was detected by XRD, further confirming that the excess Ni exists in NiTi in solid-solution.</p><p>To investigate location-specific functional behavior of FG NiTi, micro-indentation was employed. With increasing Ni contents, high recoverable ratio and smaller hysteresis loops can be obtained. The hysteresis loops, shown in the indentation depth-force curves, are directly related to the hysteresis loops in strain-stress curves. This has been demonstrated in the simulated results based on finite element modeling (FEM, details for FEM parts are elaborated in section S3 and Fig. <ref type="figure" coords="3,53.12,568.04,8.64,8.85" target="#fig_2">S3</ref> from the Supplementary materials).</p><p>Experimentally measured indentation curves are shown in the Fig. <ref type="figure" coords="3,284.20,578.53,4.49,8.85;3,37.59,588.96,9.21,8.85" target="#fig_2">3  (a)</ref>. Due to the high work hardening effect and interlocking effect of martensite <ref type="bibr" coords="3,76.82,599.45,14.36,8.85" target="#b17">[18]</ref>, the residual deformation in the region with a relatively low Ni content (Ni 49.6 Ti) still remains after heating above the austenite finish temperature. To demonstrate the shape memory effect in the martensitic zone, bulk materials fabricated by LPBF with the same NiTi powder and processing parameters have been tested under compression. The strain-stress-temperature curve proves the presence of the shape memory effect (Fig. <ref type="figure" coords="3,107.72,662.21,6.93,8.85" target="#fig_3">S4</ref>). With increasing Ni contents from ~49.6 to 52.4 at.%, the recoverable ratios increase from ~35 % to 96 % and their hysteresis loop areas are reduced by around one order of magnitude (from 6.7 × 10 5 to 7.4 × 10 4 J/mm 3 ) (Fig. <ref type="figure" coords="3,191.62,693.62,3.63,8.85" target="#fig_2">3</ref>(a) and (b)). Interestingly, when the Ni content is higher (Ni &gt; 51.3 at.%), superelasticity with near-zero hysteresis is observed in the compositionally graded NiTi. Such near-zero hysteresis is important since it indicates zero energy dissipation during stress-induced phase transformation. This can be utilized to improve solid-state refrigerator efficiency in heat engines <ref type="bibr" coords="3,547.59,55.49,10.09,8.85" target="#b8">[9,</ref><ref type="bibr" coords="3,306.59,65.98,10.93,8.85" target="#b18">19]</ref>. To further confirm the near-zero hysteresis in the region with high Ni content, a gradually increased force level was applied on regions of Ni 49.6 Ti and Ni 52.4 Ti. The near-zero hysteresis superelasticity is still preserved in the Ni 52.4 Ti region where applying a 50 N force level, but the Ni 49.6 Ti region shows a gradually increased residual deformation and a pronounced hysteresis loop (Fig. <ref type="figure" coords="3,446.00,118.24,14.19,8.85" target="#fig_2">3(c)</ref> and<ref type="figure" coords="3,478.03,118.24,9.43,8.85">(d)</ref>).</p><p>To understand the hysteresis behavior shown in various areas of the compositionally graded NiTi, Phenomenological Theory of Martensite Crystallography (PTMC) has been employed <ref type="bibr" coords="3,477.30,149.65,14.36,8.85" target="#b19">[20]</ref>. Cui et al. <ref type="bibr" coords="3,541.93,149.65,15.72,8.85" target="#b20">[21]</ref> employed this theory, for the first time, to establish a relationship between the thermal hysteresis and the middle eigenvalue (λ 2 ) of the transformation stretch tensor. Then, Ahadi and Sun <ref type="bibr" coords="3,511.99,181.00,15.72,8.85" target="#b21">[22]</ref> further explored the relationship between λ 2 and the stress hysteresis loop in NiTi alloys, tailoring the lattice parameters by controlling nano-sized grains. This theory is developed based on distortions that NiTi lattice undergoes when the phase transform from BCC_B2 to B19′ (one of the phase transformation situations is illustrated in the Fig. <ref type="figure" coords="3,521.69,233.84,13.18,8.85" target="#fig_3">4(a)</ref>). For different variants, there are 12 transformation stretch matrix, U (U = {U 1 , U 2 , ...U 12 }), which are calculated as:</p><formula xml:id="formula_0" coords="3,307.56,264.86,250.12,201.71">U 1 = ⎛ ⎜ ⎜ ⎝ θ ρ ρ ρ σ τ ρ τ σ ⎞ ⎟ ⎟ ⎠ , U 2 = ⎛ ⎜ ⎜ ⎝ θ -ρ -ρ -ρ σ τ -ρ τ σ ⎞ ⎟ ⎟ ⎠ , U 3 = ⎛ ⎜ ⎜ ⎝ θ -ρ ρ ρ σ -τ -ρ -τ σ ⎞ ⎟ ⎟ ⎠ , U 4 = ⎛ ⎜ ⎜ ⎝ θ ρ -ρ ρ σ -τ -ρ -τ σ ⎞ ⎟ ⎟ ⎠ , U 5 = ⎛ ⎜ ⎜ ⎝ σ ρ τ ρ θ ρ τ ρ σ ⎞ ⎟ ⎟ ⎠ , U 6 = ⎛ ⎜ ⎜ ⎝ σ -ρ τ -ρ θ -ρ τ -ρ σ ⎞ ⎟ ⎟ ⎠ , U 7 = ⎛ ⎜ ⎜ ⎝ σ -ρ -τ -ρ θ ρ -τ ρ σ ⎞ ⎟ ⎟ ⎠ , U 8 = ⎛ ⎜ ⎜ ⎝ σ ρ -τ ρ θ -ρ -τ -ρ σ ⎞ ⎟ ⎟ ⎠ , U 9 = ⎛ ⎜ ⎜ ⎝ σ τ ρ τ σ ρ ρ ρ θ ⎞ ⎟ ⎟ ⎠ , U 10 = ⎛ ⎜ ⎜ ⎝ σ τ -ρ τ σ -ρ -ρ -ρ θ ⎞ ⎟ ⎟ ⎠ , U 11 = ⎛ ⎜ ⎜ ⎝ σ -τ ρ -τ σ -ρ ρ -ρ θ ⎞ ⎟ ⎟ ⎠ , U 12 = ⎛ ⎜ ⎜ ⎝ σ -τ -ρ -τ σ ρ -ρ ρ θ ⎞ ⎟ ⎟ ⎠ . (1)</formula><p>The specific components in the matrix group U, θ, ρ, σandτ, are determined by lattice parameters of BCC_B2 (a B2 ) and B19′ (a, b, c and β), Specifically:</p><formula xml:id="formula_1" coords="3,306.60,504.61,251.08,31.20">θ = a ( ̅̅̅ 2 √ a + csinβ ) a B2 ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ 2a 2 + c 2 + 2 ̅̅̅ 2 √ acsinβ √ ,<label>(2)</label></formula><formula xml:id="formula_2" coords="3,306.60,547.98,251.08,56.69">ρ = accosβ ̅̅̅ 2 √ a B2 ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ 2a 2 + c 2 + 2 ̅̅̅ 2 √ acsinβ √ ,<label>(3) σ</label></formula><formula xml:id="formula_3" coords="3,313.06,579.05,244.62,36.73">= 1 2 ̅̅̅ 2 √ a B2 ⎛ ⎜ ⎝ c ( c + ̅̅̅ 2 √ asinβ ) ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ 2a 2 + c 2 + 2 ̅̅̅ 2 √ acsinβ √ + b ⎞ ⎟ ⎠,<label>(4)</label></formula><p>and</p><formula xml:id="formula_4" coords="3,306.60,639.15,251.08,36.79">τ = 1 2 ̅̅̅ 2 √ a B2 ⎛ ⎜ ⎝ c ( c + ̅̅̅ 2 √ asinβ ) ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ 2a 2 + c 2 + 2 ̅̅̅ 2 √ acsinβ √ -b ⎞ ⎟ ⎠.<label>(5)</label></formula><p>According to PTMC, when the second eigenvalue of the transformation stretch matrix equals to one, i.e. λ 2 = 1, the austenite lattice is directly compatible with a single martensite variant <ref type="bibr" coords="3,497.76,706.43,14.58,8.85" target="#b20">[21,</ref><ref type="bibr" coords="3,512.34,706.43,10.93,8.85" target="#b21">22]</ref>. This indicates that the λ 2 closer to 1, the smaller the hysteresis during phase transformations between austenite and martensite. Lattice parameters  *Due to undetectable peaks in the sample ⑤, phase transformation temperatures cannot be confirmed.   <ref type="table" coords="5,249.96,720.63,6.24,7.96">S2</ref>).</p><p>were calculated based on XRD measurements on locations with various Ni/Ti ratio (See supplementary materials for measurement and calculation details). By employing various lattice parameters on U, λ 2 values for locations with various compositional gradients are calculated and plotted as a function of distance including the gradient zones along the building direction (Fig. <ref type="figure" coords="6,124.10,107.81,3.36,8.85" target="#fig_3">4</ref>(b)). In the compositionally graded zone, Ni content increases along the building direction. A clear correlation was observed between the second eigenvalue (λ 2 ) and the Ni content (Fig. <ref type="figure" coords="6,284.20,128.73,4.49,8.85" target="#fig_3">4</ref> (b)), indicating that increased Ni improves phase transformation compatibility. Therefore, the hysteresis decreases from ~6.7 × 10 5 to ~0.7 × 10 5 J/mm 3 along the compositional gradient of increasing Ni contents. This is attributed to the improved phase transformation compatibility between BCC_B2 and B19′. The improved compatibility results from the changes of lattice parameters introduced by the solid-solution state of Ni in NiTi matrix. The solid-solution Ni is the results of high temperature (leading to homogeneity of Ni and NiTi in liquid states) and the rapid cooling (leading to oversaturated Ni in NiTi) during laser powder bed fusion. In summary, the compositionally graded NiTi alloy has been fabricated by incorporating L-PBF and in-situ alloying. It shows locationspecific functional behavior, including shape memory effect and superelasticity with various hysteresis. Phenomenological Theory of Martensite Crystallography elucidates various hysteresis in compositional gradient zones due to different phase transformation compatibilities induced by the solid-solution of Ni in the NiTi matrix. This study opens up a new strategy for developing FG NiTi with multistage responses for potential applications in industrial and medical fields.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,37.59,707.87,520.08,7.96;2,37.59,717.45,520.07,7.96;2,37.59,727.04,520.07,7.96;2,37.59,736.56,419.49,7.96;2,45.64,283.55,504.00,414.00"><head>Fig. 1 (Fig. 1 .</head><label>11</label><figDesc>Fig. 1. (a) The schematic of compositionally graded NiTi. (b) Optical microstructure of compositionally graded NiTi. (c) IPF maps of compositionally graded NiTi (Due to the fine structure and low crystal symmetry of the B19′ martensitic phase, non-indexed parts were presented in equiatomic (or Ni-lean) NiTi zones). (d) Typical STEM bright field images in selected zones: (d-1) B19′ martensite present in the upper equiatomic NiTi zone; (d-2) B2 phase with dislocations present in the Ni-rich graded zone; (d-3) B2 phase with titanium-containing oxide particles and dislocations present in the lower transition zone.</figDesc><graphic coords="2,45.64,283.55,504.00,414.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,37.59,701.81,520.05,7.96;4,37.59,711.39,520.08,8.21;4,37.59,720.97,251.25,7.96;4,56.30,55.44,482.69,636.05"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. (a) EDS line scans of Ni and Ti along the building direction. (b) DSC curves of extracted samples from zones with various Ni contents (the corresponding gradient zone was marked in the (a)). (c) XRD patterns along the building direction in the FG zone and the corresponding (d) enlarged (311) B2 peaks. BD is the building direction. (e) Schematic of extracted samples for XRD measurements.</figDesc><graphic coords="4,56.30,55.44,482.69,636.05" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,37.59,471.12,520.06,7.96;5,37.59,480.65,520.05,8.21;5,37.59,490.23,228.07,7.96;5,45.64,193.91,504.00,266.83"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. (a) Indentation depth-force curves of L-PBF NiTi in the FG zone under 10 N force. (b) The recoverable ratio and hysteresis of compositionally graded NiTi at different indentation locations. (c) Indentation depth-force curves in locations of Ni 49.6 Ti and Ni 52.4 Ti with gradually increased force levels from 10 to 50 N with 5 N increment and (d) their recoverable ratios as a function of force levels.</figDesc><graphic coords="5,45.64,193.91,504.00,266.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="5,37.59,691.94,520.08,7.96;5,37.59,701.52,520.53,7.96;5,37.59,711.11,520.07,8.21;5,37.59,720.63,224.85,7.96;5,117.64,517.75,360.00,163.87"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. (a) Schematic illustration of the lattice distortion of the B2-B19′ martensitic transformation in NiTi: Atomic coordinate systems, with (i, j, k) representing the reference frame in the BCC_B2 austenite and (i′, j′, k′) representing the reference frame in the B19′ martensite; lattice distortion from BCC_B2 (dashed lattice) to B19′ (solid lattice) (lower part in (a)). (b) The calculated second eigenvalue (λ 2 ), the absolute value of λ 2 -1 and Ni content as a function of different positions along the Ni compositional gradient (specific values can be found in the TableS2).</figDesc><graphic coords="5,117.64,517.75,360.00,163.87" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,37.59,56.30,504.71,103.48"><head>Table 1</head><label>1</label><figDesc>Phase transformation temperatures of functionally gradient NiTi alloys measured in different gradient locations.</figDesc><table coords="5,43.60,79.57,498.70,80.21"><row><cell>Locations</cell><cell>Martensite start</cell><cell>Martensite finish</cell><cell>Martensite peak</cell><cell>Austenite start</cell><cell>Austenite finish</cell><cell>Austenite peak</cell></row><row><cell></cell><cell>temperature (M s ), • C</cell><cell>temperature (M f ), • C</cell><cell>temperature (M p ), • C</cell><cell>temperature (A s ), • C</cell><cell>temperature (A f ), • C</cell><cell>temperature (A p ), • C</cell></row><row><cell>①</cell><cell>340.3</cell><cell>312.0</cell><cell>330.5</cell><cell>342.6</cell><cell>371.7</cell><cell>363.2</cell></row><row><cell>②</cell><cell>334.0</cell><cell>298.5</cell><cell>322.8</cell><cell>332.6</cell><cell>364.6</cell><cell>357.5</cell></row><row><cell>③</cell><cell>330.1</cell><cell>283.7</cell><cell>311.8</cell><cell>313.8</cell><cell>364.4</cell><cell>354.5</cell></row><row><cell>④</cell><cell>299.5</cell><cell>-</cell><cell>267.7</cell><cell>252.9</cell><cell>343.3</cell><cell>298.1</cell></row><row><cell>⑤</cell><cell>-</cell><cell>-</cell><cell></cell><cell>-</cell><cell>-</cell><cell></cell></row><row><cell>⑥</cell><cell>337.6</cell><cell>296.9</cell><cell>317.3</cell><cell>334.0</cell><cell>367.9</cell><cell>351.0</cell></row><row><cell>⑦</cell><cell>340.3</cell><cell>310.7</cell><cell>326.2</cell><cell>342.6</cell><cell>371.7</cell><cell>357.8</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p><rs type="person">Dr. Richard Huizenga</rs> at the <rs type="institution">Department of Materials Science and Engineering of the Delft University of Technology</rs> is acknowledged for the XRD analysis and unit cell size calculations. The authors are also grateful to <rs type="person">Dr. Evgenii Borisov</rs> at <rs type="affiliation">Peter the Great Saint-Petersburg Polytechnic University</rs> for the support with sample fabrication.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of competing interest</head><p>The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary materials</head><p>Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.scriptamat.2024.116351.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,322.98,127.19,232.71,7.08;6,322.98,135.19,98.45,7.08" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coords="6,376.55,127.19,159.77,7.08">Physical metallurgy of Ti-Ni-based shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Otsuka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Ren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,540.90,127.19,14.79,7.08;6,322.98,135.19,28.72,7.08">Prog. Mater Sci</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="511" to="678" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,143.18,232.68,7.08;6,322.98,151.12,222.47,7.08;6,322.98,159.11,232.70,7.08" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coords="6,424.63,151.12,120.82,7.08;6,322.98,159.11,133.95,7.08">Functionally graded shape memory alloys: design, fabrication and experimental evaluation</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">S</forename><surname>Shariat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Mahmud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Bakhtiari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Motazedian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Rio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>-H. Nam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,461.65,159.11,32.12,7.08">Mater. Des</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="page" from="225" to="237" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,167.05,232.70,7.08;6,322.98,175.04,206.72,7.08" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coords="6,467.32,167.05,88.37,7.08;6,322.98,175.04,91.57,7.08">Functionally graded NiTi strips prepared by laser surface anneal</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">S</forename><surname>Shariat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T.-H</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,419.58,175.04,33.25,7.08">Acta Mater</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1658" to="1668" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,183.03,222.35,7.08;6,322.98,190.97,124.35,7.08" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coords="6,418.45,183.03,124.07,7.08">Gradient anneal of functionally graded NiTi</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Mahmud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T.-H</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,322.98,190.97,57.82,7.08">Smart Mater. Struct</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15031</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,198.97,216.52,7.08;6,322.98,206.90,133.14,7.08" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coords="6,417.49,198.97,122.01,7.08;6,322.98,206.90,26.38,7.08">Design of functionally graded NiTi by heat treatment</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Mahmud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">H</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,354.39,206.90,25.11,7.08">Phys. Scr</title>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="page">222</biblScope>
+			<date type="published" when="2007">2007. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,214.90,232.70,7.08;6,322.98,222.83,166.60,7.08" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coords="6,430.58,214.90,125.10,7.08;6,322.98,222.83,62.53,7.08">Compositionally graded NiTi plate prepared by diffusion annealing</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T.-H</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,390.56,222.83,29.31,7.08">Scr. Mater</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="305" to="308" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,230.83,221.06,7.08;6,322.98,238.82,229.64,7.08;6,322.98,246.76,195.95,7.08" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coords="6,519.47,230.83,24.57,7.08;6,322.98,238.82,229.64,7.08;6,322.98,246.76,83.78,7.08">Effective parameters on the final properties of NiTi-based alloys manufactured by powder metallurgy methods: a review</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Parvizi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Hashemi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Asgarinia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nematollahi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Elahinia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,411.87,246.76,47.48,7.08">Prog. Mater. Sci</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page">100739</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,254.75,232.68,7.08;6,322.98,262.69,222.90,7.08;6,322.98,270.68,95.32,7.08" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coords="6,529.51,254.75,26.15,7.08;6,322.98,262.69,205.52,7.08">Influence of Ni on martensitic phase transformations in NiTi shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Frenzel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">P</forename><surname>George</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dlouhy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Somsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F X</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Eggeler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,533.19,262.69,12.68,7.08;6,322.98,270.68,18.40,7.08">Acta Mater</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="3444" to="3458" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,322.98,278.67,220.76,7.08;6,322.98,286.61,232.70,7.08;6,322.98,294.60,69.56,7.08" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coords="6,461.14,278.67,82.60,7.08;6,322.98,286.61,209.30,7.08">Linear-superelastic metals by controlled strain release via nanoscale concentration-gradient engineering</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T.-Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,537.28,286.61,18.40,7.08;6,322.98,294.60,17.51,7.08">Mater. Today</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="17" to="23" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,302.54,213.56,7.08;6,323.15,310.54,232.51,7.08;6,323.15,318.53,232.52,7.08" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coords="6,323.15,310.54,232.51,7.08;6,323.15,318.53,122.74,7.08">Emerging metallic systems for additive manufacturing: in-situ alloying and multimetal processing in laser powder bed fusion</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Sing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">D</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">L</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">F</forename><surname>Tey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H K</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">Y</forename><surname>Yeong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,450.37,318.53,46.75,7.08">Prog. Mater. Sci</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page">100795</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,326.47,224.69,7.08;6,323.15,334.46,227.02,7.08;6,323.15,342.40,213.49,7.08;6,323.15,350.39,26.51,7.08" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coords="6,450.25,334.46,99.92,7.08;6,323.15,342.40,132.38,7.08">Additive manufacturing of metallic components-process, structure and properties</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Debroy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">L</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Zuback</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>Elmer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">O</forename><surname>Milewski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Beese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wilson-Heid</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,460.40,342.40,45.67,7.08">Prog. Mater Sci</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="112" to="224" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,358.33,232.52,7.08;6,323.15,366.32,232.55,7.08;6,323.15,374.31,175.48,7.08" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coords="6,482.06,358.33,73.61,7.08;6,323.15,366.32,232.55,7.08;6,323.15,374.31,75.17,7.08">Control of microstructural characteristics and mechanical properties of AlSi12 alloy by processing conditions of laser powder bed fusion</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Miyasaka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Takata</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kobashi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,403.20,374.31,39.38,7.08">Addit. Manuf</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page">102383</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,382.25,213.18,7.08;6,323.15,390.24,232.54,7.08;6,323.15,398.18,212.79,7.08" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coords="6,323.15,390.24,232.54,7.08;6,323.15,398.18,112.60,7.08">Predictive analytical modelling and experimental validation of processing maps in additive manufacturing of nitinol alloys</title>
+		<author>
+			<persName coords=""><forename type="first">J.-N</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Borisov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Farber</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J M</forename><surname>Hermans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">A</forename><surname>Popovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,440.50,398.18,39.44,7.08">Addit. Manuf</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page">101802</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,406.18,232.55,7.08;6,323.15,414.17,232.49,7.08;6,323.15,422.11,227.42,7.08;6,323.15,430.10,153.83,7.08" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coords="6,480.13,414.17,75.51,7.08;6,323.15,422.11,227.42,7.08;6,323.15,430.10,41.06,7.08">Effect of heat treatment on microstructure and functional properties of additively manufactured NiTi shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">J.-N</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Borisov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Riemslag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Goulas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Popovich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">D</forename><surname>Tichelaar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Mainali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hermans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Popovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,368.90,430.10,48.42,7.08">J. Alloys Compd</title>
+		<imprint>
+			<biblScope unit="volume">967</biblScope>
+			<biblScope unit="page">171740</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,438.04,232.52,7.08;6,323.15,446.03,231.90,7.08" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coords="6,354.22,438.04,201.46,7.08;6,323.15,446.03,149.17,7.08">What EBSD and TKD tell us about the crystallography of the martensitic B2-B19′ transformation in NiTi shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Cayron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,477.01,446.03,22.25,7.08">Crystals</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">562</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,453.97,225.78,7.08;6,323.15,461.96,232.50,7.08;6,323.15,469.96,138.38,7.08" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coords="6,360.34,461.96,192.71,7.08">Healing cracks in additively manufactured NiTi shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">J.-N</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Borisov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Brouwer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Popovich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hermans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Popovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,323.15,469.96,65.08,7.08">Virtual Phys. Prototyp</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2246437</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,477.89,221.18,7.08;6,323.15,485.89,225.56,7.08;6,323.15,493.83,111.49,7.08" xml:id="b16">
+	<monogr>
+		<title level="m" type="main" coords="6,507.63,477.89,36.70,7.08;6,323.15,485.89,142.90,7.08">Disorder and Strain-Induced Complexity in Functional Materials</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Ren</surname></persName>
+		</author>
+		<editor>T. Kakeshita, T. Fukuda, A. Saxena, A. Planes</editor>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="201" to="225" />
+			<pubPlace>Berlin Heidelberg, Berlin, Heidelberg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,501.82,223.61,7.08;6,323.15,509.81,224.39,7.08;6,323.15,517.75,223.42,7.08;6,323.15,525.74,23.32,7.08" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coords="6,438.46,509.81,109.08,7.08;6,323.15,517.75,151.85,7.08">Achieving superelasticity in additively manufactured Ni-lean NiTi by crystallographic design</title>
+		<author>
+			<persName coords=""><forename type="first">J.-N</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Riemslag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">D</forename><surname>Tichelaar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Borisov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Popovich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Huizenga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hermans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Popovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,479.96,517.75,32.41,7.08">Mater. Des</title>
+		<imprint>
+			<biblScope unit="volume">230</biblScope>
+			<biblScope unit="page">111949</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,533.68,205.17,7.08;6,323.15,541.67,232.50,7.08;6,323.15,549.61,124.35,7.08" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coords="6,440.84,533.68,87.48,7.08;6,323.15,541.67,232.50,7.08;6,323.15,549.61,26.48,7.08">Improved elastocaloric cooling performance in gradient-structured NiTi alloy processed by localized laser surface annealing</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,354.67,549.61,33.25,7.08">Acta Mater</title>
+		<imprint>
+			<biblScope unit="volume">208</biblScope>
+			<biblScope unit="page">116741</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,557.60,224.44,7.08;6,323.15,565.60,220.49,7.08" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coords="6,391.92,557.60,155.67,7.08;6,323.15,565.60,105.69,7.08">Microstructure in the cubic to monoclinic transition in titanium-nickel shape memory alloys</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">F</forename><surname>Hane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">W</forename><surname>Shield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,433.53,565.60,33.20,7.08">Acta Mater</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="2603" to="2617" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,573.53,213.94,7.08;6,323.15,581.53,232.54,7.08;6,323.15,589.46,226.26,7.08;6,323.15,597.46,84.56,7.08" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coords="6,488.46,581.53,67.23,7.08;6,323.15,589.46,209.28,7.08">Combinatorial search of thermoelastic shape-memory alloys with extremely small hysteresis width</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">S</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">O</forename><surname>Famodu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Furuya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hattrick-Simpers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">D</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ludwig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Thienhaus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wuttig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Takeuchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,537.62,589.46,11.80,7.08;6,323.15,597.46,18.40,7.08">Nat. Mater</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="286" to="290" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.15,605.45,232.50,7.08;6,323.15,613.39,163.31,7.08" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coords="6,373.66,605.45,181.98,7.08;6,323.15,613.39,66.17,7.08">Stress-induced nanoscale phase transition in superelastic NiTi by in situ X-ray diffraction</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ahadi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coords="6,394.01,613.39,33.20,7.08">Acta Mater</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="272" to="281" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
