@@ -16,7 +16,9 @@ import pandas as pd
 from Frontend.utils import *
 from langchain_core.tools import Tool
 import sys
-from langchain_experimental.utilities import PythonREPL
+import re
+from langchain.tools import StructuredTool
+from langchain_core.messages import HumanMessage
 
 sys.stdout = sys.__stdout__ 
 print("Debug Message")
@@ -36,6 +38,16 @@ llm = ChatOpenAI(
     max_retries=2,
 )
 
+
+llm_table = ChatOpenAI(
+    model=GPT_MODEL_4_MINI,
+    model_kwargs={"response_format": "json"},
+    temperature=0.3,
+    max_completion_tokens=max_tokens,
+    timeout=None,
+    max_retries=2,
+)
+
 #TOOLS
 @tool
 def llm_tool(
@@ -47,6 +59,22 @@ def llm_tool(
     except BaseException as e:
         return f"failed to execute. Error: {repr(e)}"
     return result.content
+
+
+def llm_tool_func(input: str):
+    try:
+        result = llm.invoke(input)
+        return result.content
+    except Exception as e:
+        return f"Failed to execute. Error: {repr(e)}"
+
+strict_llm_tool = StructuredTool.from_function(
+    llm_tool_func,
+    name="strict_llm_tool",
+    description="A tool to call an LLM model to search for a query",
+    strict=True,
+    openai_schema=True,
+)
 
 @tool
 def read_file(
@@ -79,33 +107,6 @@ def read_file_summary(
         return f"failed to execute. Error: {repr(e)}"
     return message
 
-repl = PythonREPL()
-
-@tool
-def python_repl_tool(
-    code: Annotated[str, "The Python code to execute user instructions such as generating CSV files."],
-):
-    """Executes Python code and supports saving outputs as CSV files."""
-    try:
-        print("Executing Code:\n", code) 
-        result = repl.run(code)
-        print(f"Execution Result: {result}")
-        if isinstance(result, pd.DataFrame):
-            csv_path = "C:/Users/User/school/ISM V.2/CSV_Files/output.csv"
-            result.to_csv(csv_path, index=False, encoding="utf-8")
-            return f"CSV file has been successfully saved to {csv_path}."
-        
-        with open("C:/Users/User/school/ISM V.2/CSV_Files/output.csv", "w", encoding="utf-8") as f:
-            f.write(str(result))
-
-        if "to_csv" in code:
-            return "CSV file has been successfully saved."
-        
-    except Exception as e:
-        return f"Failed to execute. Error: {repr(e)}"
-    
-    return f"Successfully executed:\n'''python\n{code}\n'''\nStdout: {result}"
-
 
 tavily_tool = TavilySearchResults(max_results=5)
     
@@ -117,7 +118,7 @@ class AgentState(TypedDict):
 class AgentState(MessagesState):
     next: str
 
-members = ["General_LLM", "Math_LLM", "Researcher", "Local_File_Organiser", "Local_Researcher", "CSV_Generator"]
+members = ["General_LLM", "Math_LLM", "Researcher", "Local_File_Organiser", "Local_Researcher", "JSON_Generator"]
 
 options = members + ["FINISH"]
 
@@ -134,7 +135,7 @@ Your role is to route the user's query to the appropriate worker based on the na
    - For searching the internet or finding recent information: 'Researcher'
    - For file operations (reading, listing local database files): 'Local_File_Organiser'
    - For local database search operations (reading and provide information): 'Local_Researcher'
-   - For generating csv files: 'CSV_Generator'
+   - For generating json output: 'JSON_Generator'
 
 2. If the query requires multiple steps, route to the first appropriate worker, then based on the response, route to the next worker as needed.
 
@@ -144,7 +145,6 @@ Your role is to route the user's query to the appropriate worker based on the na
 
 4. Important constraints:
    - Avoid redundant actions by checking the conversation history
-   - If user requests for table without csv file, DO NOT route to CSV_Generator
 
 **Examples**
 
@@ -164,10 +164,14 @@ Your role is to route the user's query to the appropriate worker based on the na
   - Route to 'Local_Researcher'
 
 - User: "Can you organise a TABLE with the columns (material, formula electronegativity) for all materials that have been mentioned in the local database. If there are any missing information, can you research and add in the accurate information?"
-  - First route to 'Local_Researcher' to get the stock data, then to 'Researcher' to add in more information.
+  - Route to 'Local_Researcher' and then to 'Researcher'
 
-- User: "Can you organise a csv file based on table with the columns (material, formula electronegativity) for all materials that have been mentioned in the local database. If there are any missing information, can you research and add in the accurate information? Then generate the csv file based on the table created"
-  - First route to 'Local_Researcher' to get the stock data, then to 'Researcher' to add in more information and then route to "CSV_Generator" to export as csv file.
+- User: "Can you organise a json output based on table with the columns (material, formula electronegativity) for all materials that have been mentioned in the local database. If there are any missing information, can you research and add in the accurate information? Then generate the json output based on the information found"
+  - For generating json output: route to 'JSON_Generator'
+   BUT ONLY after routing to:
+   a. 'Local_Researcher' has gathered the relevant data, and
+   b. 'Researcher' has filled in missing information.
+   Check the conversation history to ensure these steps are complete first.
 
 Respond ONLY with the name of the next worker from: {options}.
 """
@@ -175,7 +179,7 @@ Respond ONLY with the name of the next worker from: {options}.
 
 class SupervisorState(TypedDict):
 
-    next: Literal["General_LLM", "Math_LLM", "Researcher", "Local_File_Organiser", "Local_Researcher", "CSV_Generator", "FINISH"]
+    next: Literal["General_LLM", "Math_LLM", "Researcher", "Local_File_Organiser", "Local_Researcher", "JSON_Generator", "FINISH"]
 
 #Nodes
 def supervisor_node(state: AgentState) -> AgentState:
@@ -207,58 +211,70 @@ def llm_node(state: AgentState) -> AgentState:
         ]
     }
 
-CSV_agent = create_react_agent( 
-    llm, tools=[llm_tool, python_repl_tool], state_modifier="""
-    If the user requests a CSV file, generate Python code to create and save the CSV file.
-    Use pandas to create a DataFrame for saving csv values.
-    Then execute the code using the python_repl_tool to save csv values into dataframe.
+def extract_json(text):
+    match = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+
+    match = re.search(r"(\[.*\]|\{.*\})", text, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    raise ValueError("No valid JSON found")
+
+JSON_agent = create_react_agent( 
+    llm_table, tools=[strict_llm_tool], state_modifier="""
+    You are a JSON data transformer.
+
+    Your task is to extract structured tabular data from any summary or text messages in the current conversation and output it as a **valid JSON array**
+
+    You will be penalised if you do not follow these rules:
+    - Output **only** valid JSON. No explanations, no markdown formatting, no extra text. The output must be parseable by `json.loads()` directly.
+    Provide the JSON object starting from `{` or `[` and ending with `}` or `]` only.
+    - **DO NOT** add any introduction, explanation or notes.
+    - If no data is available, return an empty list: []
+    - Return strictly valid JSON only
     """
 )
-def csv_node(state: AgentState) -> AgentState:
-    result = CSV_agent.invoke(state)
-    previous_agent = state.get("previous_agent", "Unknown")
-    if previous_agent == "Researcher":
-        researcher_data = state.get("researcher_data", None)
-        researcher_data = researcher_data["messages"][-1].content 
-    if researcher_data is None:
-        researcher_data = {
-            'ReferenceID': ['AlSi10Mg Alloy', 'Ti6Al4V Alloy', '304L Stainless Steel'],
-            'FORMULA': ['Al: Bal, Si: 10.0, Mg: 0.32', 'Ti: 90.0, Al: 6.0, V: 4.0', 'Fe: Bal, Cr: 18.0, Ni: 8.0'],
-            'VEC (Valence Electron Concentration)': [3.87, 4.0, 3.44],
-            'Electronegativity': [1.61, 1.54, 1.90],
-            'Melting Point (°C)': [867, 1928, 1400],
-            'Microstructure': [
-                'Al dendritic cells, Al-Si eutectic networks',
-                'HCP (Hexagonal Close-Packed)',
-                'FCC (Face-Centered Cubic)'
-            ]
+def json_node(state: AgentState) -> AgentState:
+    messages = state["messages"][:]
+
+    combined_text = "\n".join(msg.content for msg in messages if hasattr(msg, "content"))
+
+    if "local_researcher_data" in state:
+        combined_text += "\n" + state["local_researcher_data"]
+
+    if "researcher_data" in state:
+        combined_text += "\n" + state["researcher_data"]
+
+    try:
+        input_instance = combined_text
+
+        output= strict_llm_tool.invoke(input_instance)
+
+        clean_output = extract_json(output)
+
+        print("LLM output:", clean_output)
+
+        data = json.loads(clean_output)
+        df = pd.DataFrame(data)
+        df.to_csv('CSV_Files/new_output.csv', index=False)
+        return {
+            "messages": [HumanMessage(content="JSON output generated successfully.", name="JSON_Generator")]
         }
 
-    print(f"Material data received from: {previous_agent}")
-
-    csv_generation_code = f"""
-            import pandas as pd
-            import io
-            data = {researcher_data}
-            df = pd.DataFrame(data)
-            csv_buffer = io.StringIO()
-            df.to_csv(csv_buffer, index=False)
-            csv_content = csv_buffer.getvalue()
-            return csv_content
-        """
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return {
+            "messages": [HumanMessage(content=f"JSON output generation failed. Error: {str(e)}", name="JSON_Generator")]
+        }
     
-    csv_result = python_repl_tool(csv_generation_code)
-    state["previous_agent"] = "CSV_Generator"
-    return {
-        "messages": [
-            HumanMessage(content=f"CSV file generated successfully. {csv_result}", name="CSV_Generator")
-        ]
-    }
 
 math_agent = create_react_agent(
     llm, tools=[llm_tool, tavily_tool], state_modifier="You are a scientist that is very good  at math and science calculations. Analyse and provide answers to user's question in proper Latex formatting. Make use of the tools available if necessary."
 )
 def math_node(state: AgentState) -> AgentState:
+    print("--- Math Node ---")
     result = math_agent.invoke(state)
     state["previous_agent"] = "Math_LLM"
     return {
@@ -271,6 +287,7 @@ file_organizer_agent = create_react_agent(
     llm, tools=[read_file], state_modifier="You are a highly-trained research analyst and can provide the user with the information they need. Use the information from Tool: read_file to compile and organise the relevant file names based on the information provided. Answer the user's question to the best of your ability."
 )
 def file_organizer_node(state: AgentState) -> AgentState:
+    print("--- File Organizer Node ---")
     result = file_organizer_agent.invoke(state) 
     state["previous_agent"] = "Local_File_Organiser"
     return{
@@ -280,20 +297,13 @@ def file_organizer_node(state: AgentState) -> AgentState:
     }
 
 local_researcher_agent = create_react_agent(
-    llm, tools=[read_file_summary], state_modifier="You are a highly-trained research analyst and can provide the user with the information they need. Use the information from Tool: read_file to compile and organise a comprehensive summary according to user's query. Include the files names information is sourced from. Answer the user's question to the best of your ability. " \
-    "If user requests for csv file, return content ONLY in JSON format with no additional information. Otherwise, return output as usual"
+    llm, tools=[read_file_summary], state_modifier="You are a highly-trained research analyst and can provide the user with the information they need. Use the information from Tool: read_file to compile and organise a comprehensive summary according to user's query. Include the files names information is sourced from. Answer the user's question to the best of your ability. If user requests for json output, it will be arranged by subequent agents, just prepare data in text format."
 )
 def local_researcher_node(state: AgentState) -> AgentState:
+    print("--- Local Researcher ---")
     result = local_researcher_agent.invoke(state) 
     data = result["messages"][-1].content 
-    if "csv" in state.get("user_request", "").lower():
-        try:
-            json_data = json.loads(data)
-            state["local_researcher_data"] = json_data 
-        except json.JSONDecodeError:
-            state["local_researcher_data"] = {"error": "Failed to parse response as JSON."}
-    else:
-        state["local_researcher_data"] = data
+    state["local_researcher_data"] = data
     state["previous_agent"] = "Local_Researcher"
     return{
         "messages": [
@@ -304,8 +314,7 @@ def local_researcher_node(state: AgentState) -> AgentState:
 research_agent = create_react_agent(
     llm,
     tools=[tavily_tool],
-    state_modifier="You are a highly-trained researcher. You are tasked with finding the answer to the user's question. Use the following tools: Tavily Search to get updated information to answer query." \
-    "If user requests for csv file, return content ONLY in JSON format with no additional information. Otherwise, return output as usual"
+    state_modifier="You are a highly-trained researcher. You are tasked with finding the answer to the user's question. Use the following tools: Tavily Search to get updated information to answer query. If user requests for json output, it will be arranged by subequent agents, just prepare data in text format."
 )
 def research_node(state: AgentState) -> AgentState:
     previous_agent = state.get("previous_agent", "Unknown")
@@ -316,14 +325,7 @@ def research_node(state: AgentState) -> AgentState:
             print(f"Using data from Local Researcher: {local_researcher_data}")
     result = research_agent.invoke(state)
     data = result["messages"][-1].content 
-    if "csv" in state.get("user_request", "").lower():
-        try:
-            json_data = json.loads(data)
-            state["researcher_data"] = json_data 
-        except json.JSONDecodeError:
-            state["researcher_data"] = {"error": "Failed to parse response as JSON."}
-    else:
-        state["researcher_data"] = data
+    state["researcher_data"] = data
     state["previous_agent"] = "Researcher"
     return{
         "messages": [
@@ -339,7 +341,7 @@ builder.add_node("Math_LLM", math_node)
 builder.add_node("Researcher", research_node)
 builder.add_node("Local_File_Organiser", file_organizer_node)
 builder.add_node("Local_Researcher", local_researcher_node)
-builder.add_node("CSV_Generator", csv_node)
+builder.add_node("JSON_Generator", json_node)
 
 config = {"configurable": {"thread_id": "1"}, "recursion_limit": 50}
 memory = MemorySaver()
